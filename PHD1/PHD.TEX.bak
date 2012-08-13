@@ -1,0 +1,141 @@
+
+%%%%% Date of changes 20.12.2007
+\documentclass[12pt]{report}
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsfonts,amssymb,amsmath,amsthm,amscd,latexsym}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{psfrag}
+\usepackage{srcltx}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[ukrainian]{babel}
+\fancyfoot{} \rhead{\thepage} \cfoot{} \lhead{}
+%\newtheorem{theorem}{Теорема}[chapter]
+%\newtheorem{pr}[theorem]{Твердження}
+%\newtheorem{cor}[theorem]{Наслідок}
+%\newtheorem{lemma}[theorem]{Лема}
+%\newtheorem{defin}[theorem]{Означення}
+%\newtheorem{note}[theorem]{Зауваження}
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{lemma}{Лема}[section]
+\newtheorem{corollary}{Наслідок}[section]
+\newtheorem{example}{Приклад}[section]
+\newtheorem{definition}{Означення}[section]
+\newtheorem{exes}{Вправа}[section]
+\pagestyle{myheadings}
+
+\paperheight 297mm
+\paperwidth 210mm
+\oddsidemargin -7mm
+\topmargin 0mm
+\textwidth 175mm
+\textheight 255mm
+\marginparsep 0mm
+\marginparwidth 0mm
+\headheight 0mm
+\headsep 0mm
+\footskip 5mm
+\parskip 2pt
+
+
+\DeclareMathOperator{\Bool}{Bool}
+\newcommand{\Wr}{\mathop{\font\xx=cmsy10 at 18pt \hbox{\xx \char111}}}
+\def\thnumbering{chapter}
+\def\equa{\Leftrightarrow}
+\def\x{{\mathcal{X}}}
+\def\b{{\mathcal{B}}}
+
+\makeatletter
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0mm}{-\baselineskip}{-5pt}{\bf}}
+\makeatother
+
+
+
+\begin{document}
+\renewcommand{\bibname}{Список літератури}
+\setcounter{tocdepth}{1}
+
+
+
+%\input{title.tex}
+\thispagestyle{empty}
+\begin{center}
+
+%\vskip 10 mm \large
+
+НАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ \\ ``КИЄВО--МОГИЛЯНСЬКА АКАДЕМІЯ''
+
+\end{center}
+
+\vskip 30 mm
+
+
+\begin{center}
+
+\Large {\sc  Морозов Д.І. }
+
+\end{center}
+
+
+
+
+\vskip 60 mm
+
+
+\begin{center}
+
+\Large  { \bf Скінченостанова спряженість лінійніх
+ ізометрій простору 2-адичних чисел.  }
+\end{center}
+
+
+\vskip 80 mm
+
+\begin{center}
+Київ --- 2008
+\end{center}
+
+
+
+\large
+
+
+\tableofcontents
+%\input{def.tex}
+
+%\input{vstup.tex}
+%\input{tehnic.tex}
+%\input{portret.tex}
+%\input{alg.tex}
+%\input{avtomat.tex}
+%\input{func.tex}
+%\input{graphs.tex}
+
+
+
+
+
+%\input{zviazok.tex}
+%\input{sp.tex}
+%\input{ring.tex}
+\input{conj.tex}
+
+
+%\input{centmaxex.tex}
+%\input{centmax.tex}
+
+
+%\input{extcent.tex}
+
+%\input{linear1.tex}
+%\input{diagram.tex}
+
+%\input{relat.tex}
+%\input{grafs.tex}
+
+
+%\input{bibliogr.tex}
+
+\end{document}

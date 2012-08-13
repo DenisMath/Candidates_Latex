@@ -1,0 +1,38 @@
+\chapter{Алгебраїчний запис.}
+
+%\section{Необхідні визначення і допоміжні твердження}
+%\subsection{Необхідні визначення}
+ Алгебраїчний запис зручно використовувати для множеня автоморфізмів.
+
+
+ В алгебраїчному запису автоморфізм дерева буде виглядати, як $(a,b)$ або як $(a,b)\circ \sigma$.
+
+
+  Автоморфізм вигляду $(a,b)$
+  діє на праве для кореня піддерево автоморфізмом a, на ліве - автоморфізмом b, залишаючи суміжні
+   з коренем вершини на місці.
+Автоморфізм вигляду $(a,b)\circ \sigma$  діє на праве для кореня піддерево автоморфізмом a, на ліве - автоморфізмом b,та переставляє суміжні з коренем вершини.
+
+
+Множення автоморфізмів відбувається наступним чином:
+$$(a,b)\circ (c,d)=(a\circ c,b\circ d)$$
+$$(a,b)\circ ((c,d)\circ \sigma)=(a\circ c,b\circ d)\circ \sigma$$
+$$((a,b)\circ \sigma)\circ (c,d)=(a\circ d,b\circ c)\circ \sigma$$
+$$((a,b)\circ \sigma)\circ ((c,d)\circ \sigma)=(a\circ d,b\circ c)$$
+Також зручно записувати обернений до автоморфізму дерева:
+$$(a,b)^{-1}=(a^{-1},b^{-1})$$
+$$((a,b)\circ \sigma)^{-1}=\sigma \circ (a^{-1},b^{-1})=(b^{-1},a^{-1})\circ \sigma$$
+
+Крім цього за допомогою алгебраїчного запису однозначно визначаються скінченостанові автоморфізми. Наприклад  $adding \ machine$ задається наступним співвідношенням:
+$$\varepsilon=(id,\varepsilon)\circ \sigma$$
+$$id=(id,id)$$
+Квадрат $adding \ machine$ має 3 стани $\varepsilon$ , $\varepsilon^2$ та $id$:
+$$\varepsilon^2=(\varepsilon,\varepsilon)$$
+$$\varepsilon=(id,\varepsilon)\circ \sigma$$
+$$id=(id,id)$$
+За допомогою цієї техніки опишемо $\varepsilon^k$:
+$$\varepsilon^{-1}=(\varepsilon^{-1},id)\circ \sigma$$
+$$\varepsilon^3=\varepsilon^2 \circ \varepsilon=(\varepsilon,\varepsilon) \circ (id,\varepsilon)\circ \sigma=(\varepsilon,\varepsilon^2)\circ \sigma $$
+$$\varepsilon^{2k}=(\varepsilon^k,\varepsilon^k) $$
+ $$\varepsilon^{2k+1}=(\varepsilon^k,\varepsilon^k)\circ \varepsilon= (\varepsilon^k,\varepsilon^k)
+ \circ (id,\varepsilon)\circ \sigma=(\varepsilon^k,\varepsilon^{k+1})\circ \sigma $$ 
